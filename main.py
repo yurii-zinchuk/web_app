@@ -107,15 +107,21 @@ def create_map(map_info: list):
     """
     my_map = fl.Map(
         min_zoom=2,
-        zoom_start=7,
+        zoom_start=8,
         control_scale=True
     )
 
     fg_m = fl.FeatureGroup(name='People following')
+    people = dict()
     for name, location, coordinates in map_info:
+        if coordinates in people:
+            people[coordinates].append(name)
+        else:
+            people[coordinates] = [name]
+
         fg_m.add_child(fl.Marker(
             location=coordinates,
-            popup=name,
+            popup='\n'.join(people[coordinates]),
             tooltip=location,
             icon=fl.Icon(color='cadetblue')
         ))
