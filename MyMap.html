@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d6e5aa1ab0fa4d42866e5e30658bf50c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d6e5aa1ab0fa4d42866e5e30658bf50c" ></div>
+        
+</body>
+<script>    
+    
+            var map_d6e5aa1ab0fa4d42866e5e30658bf50c = L.map(
+                "map_d6e5aa1ab0fa4d42866e5e30658bf50c",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_d6e5aa1ab0fa4d42866e5e30658bf50c);
+
+            
+
+        
+    
+            var tile_layer_936d76aa4d87488db66cbebaeeb4575a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 2, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d6e5aa1ab0fa4d42866e5e30658bf50c);
+        
+    
+            var feature_group_ff300a2ee3e44e069b8047aa0db5d8bb = L.featureGroup(
+                {}
+            ).addTo(map_d6e5aa1ab0fa4d42866e5e30658bf50c);
+        
+    
+            var marker_d66c05d8ad9344a091c0282e8f6eaec4 = L.marker(
+                [42.3602534, -71.0582912],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_8c51587b8d4b4bee8c0322f52d3284d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_d66c05d8ad9344a091c0282e8f6eaec4.setIcon(icon_8c51587b8d4b4bee8c0322f52d3284d9);
+        
+    
+        var popup_a67eb31cfd8c4cfaadcbd55f33d60213 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0554a5c364184b9190800f693bb0e117 = $(`<div id="html_0554a5c364184b9190800f693bb0e117" style="width: 100.0%; height: 100.0%;">Jules Wang 王竣穎</div>`)[0];
+            popup_a67eb31cfd8c4cfaadcbd55f33d60213.setContent(html_0554a5c364184b9190800f693bb0e117);
+        
+
+        marker_d66c05d8ad9344a091c0282e8f6eaec4.bindPopup(popup_a67eb31cfd8c4cfaadcbd55f33d60213)
+        ;
+
+        
+    
+    
+            marker_d66c05d8ad9344a091c0282e8f6eaec4.bindTooltip(
+                `<div>
+                     Boston, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7954496e1ee14a9e9f1a3f0e84ac142e = L.marker(
+                [36.6061713, -91.3831923],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_3cdacd12d04643aba1964354351c9bde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_7954496e1ee14a9e9f1a3f0e84ac142e.setIcon(icon_3cdacd12d04643aba1964354351c9bde);
+        
+    
+        var popup_d6231f37ec444258839ce2472febbc80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d96b17e11904941803bfc13ea91ad03 = $(`<div id="html_2d96b17e11904941803bfc13ea91ad03" style="width: 100.0%; height: 100.0%;">chrissy teigen</div>`)[0];
+            popup_d6231f37ec444258839ce2472febbc80.setContent(html_2d96b17e11904941803bfc13ea91ad03);
+        
+
+        marker_7954496e1ee14a9e9f1a3f0e84ac142e.bindPopup(popup_d6231f37ec444258839ce2472febbc80)
+        ;
+
+        
+    
+    
+            marker_7954496e1ee14a9e9f1a3f0e84ac142e.bindTooltip(
+                `<div>
+                     couch
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05617c14ecf94894acb97cdfc6c5e33a = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_0d648f7d5b0c47c8a0427469f800e5bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_05617c14ecf94894acb97cdfc6c5e33a.setIcon(icon_0d648f7d5b0c47c8a0427469f800e5bd);
+        
+    
+        var popup_890d50a70f7b48be9865b84f5a62ef6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f655ed6be0d4807a4340216be092c4e = $(`<div id="html_5f655ed6be0d4807a4340216be092c4e" style="width: 100.0%; height: 100.0%;">Alejandro Mayorkas</div>`)[0];
+            popup_890d50a70f7b48be9865b84f5a62ef6f.setContent(html_5f655ed6be0d4807a4340216be092c4e);
+        
+
+        marker_05617c14ecf94894acb97cdfc6c5e33a.bindPopup(popup_890d50a70f7b48be9865b84f5a62ef6f)
+        ;
+
+        
+    
+    
+            marker_05617c14ecf94894acb97cdfc6c5e33a.bindTooltip(
+                `<div>
+                     United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_723a11ecc8bc4c5da6b2143c5e759e69 = L.marker(
+                [38.8950368, -77.0365427],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_68c3ef6943414bc190fc05eaa2d8faa2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_723a11ecc8bc4c5da6b2143c5e759e69.setIcon(icon_68c3ef6943414bc190fc05eaa2d8faa2);
+        
+    
+        var popup_928f331e1260409fbe77b6bb8f9cf446 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ac8a1f9f128410bb66a2ef5fd9a67f2 = $(`<div id="html_2ac8a1f9f128410bb66a2ef5fd9a67f2" style="width: 100.0%; height: 100.0%;">Antony Blinken</div>`)[0];
+            popup_928f331e1260409fbe77b6bb8f9cf446.setContent(html_2ac8a1f9f128410bb66a2ef5fd9a67f2);
+        
+
+        marker_723a11ecc8bc4c5da6b2143c5e759e69.bindPopup(popup_928f331e1260409fbe77b6bb8f9cf446)
+        ;
+
+        
+    
+    
+            marker_723a11ecc8bc4c5da6b2143c5e759e69.bindTooltip(
+                `<div>
+                     Washington, DC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a875bb764014acdb8aebcb1facb165f = L.marker(
+                [38.8950368, -77.0365427],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_0137241926c8434197f99825adbd269e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_4a875bb764014acdb8aebcb1facb165f.setIcon(icon_0137241926c8434197f99825adbd269e);
+        
+    
+        var popup_04aaee2fd5184ee6891787a221297f15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27e7860ccb59403e92a14a54cc406411 = $(`<div id="html_27e7860ccb59403e92a14a54cc406411" style="width: 100.0%; height: 100.0%;">Neera Tanden</div>`)[0];
+            popup_04aaee2fd5184ee6891787a221297f15.setContent(html_27e7860ccb59403e92a14a54cc406411);
+        
+
+        marker_4a875bb764014acdb8aebcb1facb165f.bindPopup(popup_04aaee2fd5184ee6891787a221297f15)
+        ;
+
+        
+    
+    
+            marker_4a875bb764014acdb8aebcb1facb165f.bindTooltip(
+                `<div>
+                     DC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a2ae2867768478a9efcf4354ae03510 = L.marker(
+                [38.5810606, -121.493895],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_32ce4eeafdfb472ebe7e20c58dddea0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_9a2ae2867768478a9efcf4354ae03510.setIcon(icon_32ce4eeafdfb472ebe7e20c58dddea0e);
+        
+    
+        var popup_3de8027b27a04e47ae82b12afc51463c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7278f8f1f1146f79280a10d495725e3 = $(`<div id="html_a7278f8f1f1146f79280a10d495725e3" style="width: 100.0%; height: 100.0%;">Xavier Becerra</div>`)[0];
+            popup_3de8027b27a04e47ae82b12afc51463c.setContent(html_a7278f8f1f1146f79280a10d495725e3);
+        
+
+        marker_9a2ae2867768478a9efcf4354ae03510.bindPopup(popup_3de8027b27a04e47ae82b12afc51463c)
+        ;
+
+        
+    
+    
+            marker_9a2ae2867768478a9efcf4354ae03510.bindTooltip(
+                `<div>
+                     Sacramento, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6725e3b42e6043da8faf7c67930cd609 = L.marker(
+                [40.2253569, -82.6881395],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_1ba848936e404f008fbbfc8d7fc93b1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_6725e3b42e6043da8faf7c67930cd609.setIcon(icon_1ba848936e404f008fbbfc8d7fc93b1d);
+        
+    
+        var popup_1711d84b543845cb8c3d464c8be24e82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96e56e23bee74f5cb982b86b95a77cfe = $(`<div id="html_96e56e23bee74f5cb982b86b95a77cfe" style="width: 100.0%; height: 100.0%;">Marcia L. Fudge</div>`)[0];
+            popup_1711d84b543845cb8c3d464c8be24e82.setContent(html_96e56e23bee74f5cb982b86b95a77cfe);
+        
+
+        marker_6725e3b42e6043da8faf7c67930cd609.bindPopup(popup_1711d84b543845cb8c3d464c8be24e82)
+        ;
+
+        
+    
+    
+            marker_6725e3b42e6043da8faf7c67930cd609.bindTooltip(
+                `<div>
+                     Ohio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29f30cf2fd894100ac1f1e7834877477 = L.marker(
+                [38.8950368, -77.0365427],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_09ff4952e31041ae81324266fc311603 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_29f30cf2fd894100ac1f1e7834877477.setIcon(icon_09ff4952e31041ae81324266fc311603);
+        
+    
+        var popup_a9df460766f241b6bccbf4ad6d58cb95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_682240b2204e47cbbedb5f9b81e9da8e = $(`<div id="html_682240b2204e47cbbedb5f9b81e9da8e" style="width: 100.0%; height: 100.0%;">Denis McDonough</div>`)[0];
+            popup_a9df460766f241b6bccbf4ad6d58cb95.setContent(html_682240b2204e47cbbedb5f9b81e9da8e);
+        
+
+        marker_29f30cf2fd894100ac1f1e7834877477.bindPopup(popup_a9df460766f241b6bccbf4ad6d58cb95)
+        ;
+
+        
+    
+    
+            marker_29f30cf2fd894100ac1f1e7834877477.bindTooltip(
+                `<div>
+                     Washington, DC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cebb18b286f34dfa8003c2f4bf42b7ed = L.marker(
+                [41.6833813, -86.2500066],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_71c2d9d9a13e4af1871ef65910bb0917 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_cebb18b286f34dfa8003c2f4bf42b7ed.setIcon(icon_71c2d9d9a13e4af1871ef65910bb0917);
+        
+    
+        var popup_c11eb1691ff94d30994e97c33ca0b2c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_074e8a8253384c4f9ef887e43d11d4ed = $(`<div id="html_074e8a8253384c4f9ef887e43d11d4ed" style="width: 100.0%; height: 100.0%;">Pete Buttigieg</div>`)[0];
+            popup_c11eb1691ff94d30994e97c33ca0b2c2.setContent(html_074e8a8253384c4f9ef887e43d11d4ed);
+        
+
+        marker_cebb18b286f34dfa8003c2f4bf42b7ed.bindPopup(popup_c11eb1691ff94d30994e97c33ca0b2c2)
+        ;
+
+        
+    
+    
+            marker_cebb18b286f34dfa8003c2f4bf42b7ed.bindTooltip(
+                `<div>
+                     South Bend, Indiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dac4a958e43b4ff0a789658445408d5b = L.marker(
+                [35.0841034, -106.650985],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_a913242b460a4dfaaea5dadf6acd96b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_dac4a958e43b4ff0a789658445408d5b.setIcon(icon_a913242b460a4dfaaea5dadf6acd96b7);
+        
+    
+        var popup_7b360e67b1ec44d3824a7325f7596433 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9911b7e7d0c478880be8992bd2a4329 = $(`<div id="html_b9911b7e7d0c478880be8992bd2a4329" style="width: 100.0%; height: 100.0%;">Deb Haaland</div>`)[0];
+            popup_7b360e67b1ec44d3824a7325f7596433.setContent(html_b9911b7e7d0c478880be8992bd2a4329);
+        
+
+        marker_dac4a958e43b4ff0a789658445408d5b.bindPopup(popup_7b360e67b1ec44d3824a7325f7596433)
+        ;
+
+        
+    
+    
+            marker_dac4a958e43b4ff0a789658445408d5b.bindTooltip(
+                `<div>
+                     Albuquerque
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6e3700a1d3947fd87e6aa3c4ac27bf8 = L.marker(
+                [38.8950368, -77.0365427],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_1348a2b5f5104883b5c0465559c057f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_b6e3700a1d3947fd87e6aa3c4ac27bf8.setIcon(icon_1348a2b5f5104883b5c0465559c057f0);
+        
+    
+        var popup_3cbe1b4a22874333b64d30724086b979 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_850d0bcd394e4759b594092317485b3c = $(`<div id="html_850d0bcd394e4759b594092317485b3c" style="width: 100.0%; height: 100.0%;">Jennifer Granholm</div>`)[0];
+            popup_3cbe1b4a22874333b64d30724086b979.setContent(html_850d0bcd394e4759b594092317485b3c);
+        
+
+        marker_b6e3700a1d3947fd87e6aa3c4ac27bf8.bindPopup(popup_3cbe1b4a22874333b64d30724086b979)
+        ;
+
+        
+    
+    
+            marker_b6e3700a1d3947fd87e6aa3c4ac27bf8.bindTooltip(
+                `<div>
+                     Washington, DC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee103da787e34844be8f694284e3c416 = L.marker(
+                [38.8950368, -77.0365427],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_b8be5bf760d44ff6a44b4a3cda94ceab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_ee103da787e34844be8f694284e3c416.setIcon(icon_b8be5bf760d44ff6a44b4a3cda94ceab);
+        
+    
+        var popup_69a916b2641c4247b6e1c0c7f97edcca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb26edeb9c2c4b2a8f2b7b1ab327acb2 = $(`<div id="html_bb26edeb9c2c4b2a8f2b7b1ab327acb2" style="width: 100.0%; height: 100.0%;">Michael S. Regan</div>`)[0];
+            popup_69a916b2641c4247b6e1c0c7f97edcca.setContent(html_bb26edeb9c2c4b2a8f2b7b1ab327acb2);
+        
+
+        marker_ee103da787e34844be8f694284e3c416.bindPopup(popup_69a916b2641c4247b6e1c0c7f97edcca)
+        ;
+
+        
+    
+    
+            marker_ee103da787e34844be8f694284e3c416.bindTooltip(
+                `<div>
+                     Washington, DC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d512f89a98954e549d1930a841aa5ced = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_50dbabcbab894052972f76cc31371cc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_d512f89a98954e549d1930a841aa5ced.setIcon(icon_50dbabcbab894052972f76cc31371cc4);
+        
+    
+        var popup_90c6425485444099a4f2b81b9c5fddd6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a347fb2a1be499db5cbccbd55306ced = $(`<div id="html_8a347fb2a1be499db5cbccbd55306ced" style="width: 100.0%; height: 100.0%;">Secretary of Defense Lloyd J. Austin III</div>`)[0];
+            popup_90c6425485444099a4f2b81b9c5fddd6.setContent(html_8a347fb2a1be499db5cbccbd55306ced);
+        
+
+        marker_d512f89a98954e549d1930a841aa5ced.bindPopup(popup_90c6425485444099a4f2b81b9c5fddd6)
+        ;
+
+        
+    
+    
+            marker_d512f89a98954e549d1930a841aa5ced.bindTooltip(
+                `<div>
+                     United States of America
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b831e67d9c0446797ec3d6ed709537c = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_b7b805567b884770b1cbb7234915c7e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_2b831e67d9c0446797ec3d6ed709537c.setIcon(icon_b7b805567b884770b1cbb7234915c7e9);
+        
+    
+        var popup_7f838faad65841a8bf32e0cf4b890ace = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc8b7bc88fe8404a8bb6872fb2ac8667 = $(`<div id="html_cc8b7bc88fe8404a8bb6872fb2ac8667" style="width: 100.0%; height: 100.0%;">The White House</div>`)[0];
+            popup_7f838faad65841a8bf32e0cf4b890ace.setContent(html_cc8b7bc88fe8404a8bb6872fb2ac8667);
+        
+
+        marker_2b831e67d9c0446797ec3d6ed709537c.bindPopup(popup_7f838faad65841a8bf32e0cf4b890ace)
+        ;
+
+        
+    
+    
+            marker_2b831e67d9c0446797ec3d6ed709537c.bindTooltip(
+                `<div>
+                     United States of America
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16a9cd96e33543c3b71c72b84a2caa21 = L.marker(
+                [38.8950368, -77.0365427],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_07bda4e6d5824d1ebdf3b9fcbcfc3bdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_16a9cd96e33543c3b71c72b84a2caa21.setIcon(icon_07bda4e6d5824d1ebdf3b9fcbcfc3bdf);
+        
+    
+        var popup_5abb201e98734abd8b8f4797c8d3493e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f6ec4bbf7cf4b5ea23b947e2e350827 = $(`<div id="html_7f6ec4bbf7cf4b5ea23b947e2e350827" style="width: 100.0%; height: 100.0%;">Kamala Harris</div>`)[0];
+            popup_5abb201e98734abd8b8f4797c8d3493e.setContent(html_7f6ec4bbf7cf4b5ea23b947e2e350827);
+        
+
+        marker_16a9cd96e33543c3b71c72b84a2caa21.bindPopup(popup_5abb201e98734abd8b8f4797c8d3493e)
+        ;
+
+        
+    
+    
+            marker_16a9cd96e33543c3b71c72b84a2caa21.bindTooltip(
+                `<div>
+                     Washington, DC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6991f5f0b5d4e69a97afec24c8ed8b5 = L.marker(
+                [39.5158825, -116.8537227],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_c8b5f8717a194cee8c945ea392b37d8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_c6991f5f0b5d4e69a97afec24c8ed8b5.setIcon(icon_c8b5f8717a194cee8c945ea392b37d8c);
+        
+    
+        var popup_478ea17933ce49bbb16c88bb38c11c86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c888ccaf25a4f0388a4b663f7faad3a = $(`<div id="html_8c888ccaf25a4f0388a4b663f7faad3a" style="width: 100.0%; height: 100.0%;">Joe for Nevada</div>`)[0];
+            popup_478ea17933ce49bbb16c88bb38c11c86.setContent(html_8c888ccaf25a4f0388a4b663f7faad3a);
+        
+
+        marker_c6991f5f0b5d4e69a97afec24c8ed8b5.bindPopup(popup_478ea17933ce49bbb16c88bb38c11c86)
+        ;
+
+        
+    
+    
+            marker_c6991f5f0b5d4e69a97afec24c8ed8b5.bindTooltip(
+                `<div>
+                     Nevada
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2257e67a1fe9461d9da052b4fb7e9a56 = L.marker(
+                [34.0007493, -81.0343313],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_9312d44906104be49aadea87af76cd9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_2257e67a1fe9461d9da052b4fb7e9a56.setIcon(icon_9312d44906104be49aadea87af76cd9d);
+        
+    
+        var popup_d45f42eafdee4498bf07f6ec38f083bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a1aadd3781e4aa89b6ab709a4b50771 = $(`<div id="html_2a1aadd3781e4aa89b6ab709a4b50771" style="width: 100.0%; height: 100.0%;">Joe Won.</div>`)[0];
+            popup_d45f42eafdee4498bf07f6ec38f083bd.setContent(html_2a1aadd3781e4aa89b6ab709a4b50771);
+        
+
+        marker_2257e67a1fe9461d9da052b4fb7e9a56.bindPopup(popup_d45f42eafdee4498bf07f6ec38f083bd)
+        ;
+
+        
+    
+    
+            marker_2257e67a1fe9461d9da052b4fb7e9a56.bindTooltip(
+                `<div>
+                     Columbia, SC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d06df38c238b49a6be3c500410c2a898 = L.marker(
+                [41.9216734, -93.3122705],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_9f18beded8f74a62886874bc8dd23970 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_d06df38c238b49a6be3c500410c2a898.setIcon(icon_9f18beded8f74a62886874bc8dd23970);
+        
+    
+        var popup_49638a35ebce4348af9b6dabca1d0310 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3fcc5cec4068470d8522c938b330fc3c = $(`<div id="html_3fcc5cec4068470d8522c938b330fc3c" style="width: 100.0%; height: 100.0%;">Joe for Iowa</div>`)[0];
+            popup_49638a35ebce4348af9b6dabca1d0310.setContent(html_3fcc5cec4068470d8522c938b330fc3c);
+        
+
+        marker_d06df38c238b49a6be3c500410c2a898.bindPopup(popup_49638a35ebce4348af9b6dabca1d0310)
+        ;
+
+        
+    
+    
+            marker_d06df38c238b49a6be3c500410c2a898.bindTooltip(
+                `<div>
+                     Iowa, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9028f949773d43d48a58839fb153dcdd = L.marker(
+                [39.9527237, -75.1635262],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_470aaa40db07499eaf587d2d5d56b7df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_9028f949773d43d48a58839fb153dcdd.setIcon(icon_470aaa40db07499eaf587d2d5d56b7df);
+        
+    
+        var popup_699c50f6e32d432bac2ecb42c4cbf20c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd69b7332c654b8087d7e3f4346f9843 = $(`<div id="html_dd69b7332c654b8087d7e3f4346f9843" style="width: 100.0%; height: 100.0%;">Team Joe (Text JOE to 30330)</div>`)[0];
+            popup_699c50f6e32d432bac2ecb42c4cbf20c.setContent(html_dd69b7332c654b8087d7e3f4346f9843);
+        
+
+        marker_9028f949773d43d48a58839fb153dcdd.bindPopup(popup_699c50f6e32d432bac2ecb42c4cbf20c)
+        ;
+
+        
+    
+    
+            marker_9028f949773d43d48a58839fb153dcdd.bindTooltip(
+                `<div>
+                     Philadelphia, PA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55ca2c922be24cbfb5896992e04552cc = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_36e0efbc23574661978af097789aee75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_55ca2c922be24cbfb5896992e04552cc.setIcon(icon_36e0efbc23574661978af097789aee75);
+        
+    
+        var popup_1518598a52a345d597345df9797c2ed7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_218213c6148842cc94dd18ce3a827e7b = $(`<div id="html_218213c6148842cc94dd18ce3a827e7b" style="width: 100.0%; height: 100.0%;">It's On Us</div>`)[0];
+            popup_1518598a52a345d597345df9797c2ed7.setContent(html_218213c6148842cc94dd18ce3a827e7b);
+        
+
+        marker_55ca2c922be24cbfb5896992e04552cc.bindPopup(popup_1518598a52a345d597345df9797c2ed7)
+        ;
+
+        
+    
+    
+            marker_55ca2c922be24cbfb5896992e04552cc.bindTooltip(
+                `<div>
+                     United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b8e360ba619405592b4622ff198ce39 = L.marker(
+                [39.6852191, -75.7508289],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_58dbeeede4c346528a497ff4b8e4a932 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_8b8e360ba619405592b4622ff198ce39.setIcon(icon_58dbeeede4c346528a497ff4b8e4a932);
+        
+    
+        var popup_86aef94731e749fe847325f9d196888e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ac0c75f24c8461397c14ae155900108 = $(`<div id="html_4ac0c75f24c8461397c14ae155900108" style="width: 100.0%; height: 100.0%;">Biden Institute</div>`)[0];
+            popup_86aef94731e749fe847325f9d196888e.setContent(html_4ac0c75f24c8461397c14ae155900108);
+        
+
+        marker_8b8e360ba619405592b4622ff198ce39.bindPopup(popup_86aef94731e749fe847325f9d196888e)
+        ;
+
+        
+    
+    
+            marker_8b8e360ba619405592b4622ff198ce39.bindTooltip(
+                `<div>
+                     Newark, DE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0aab1b40f9d64df1b57bb1c52b3739a6 = L.marker(
+                [38.8950368, -77.0365427],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_abdbb7aeb3fa4a7e811c5272a6a4c2c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_0aab1b40f9d64df1b57bb1c52b3739a6.setIcon(icon_abdbb7aeb3fa4a7e811c5272a6a4c2c8);
+        
+    
+        var popup_da811952baa547afb40294e5d0e9b3fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_948bf2f6b4f9448ba8f7856c69ad7a2a = $(`<div id="html_948bf2f6b4f9448ba8f7856c69ad7a2a" style="width: 100.0%; height: 100.0%;">Biden Cancer</div>`)[0];
+            popup_da811952baa547afb40294e5d0e9b3fd.setContent(html_948bf2f6b4f9448ba8f7856c69ad7a2a);
+        
+
+        marker_0aab1b40f9d64df1b57bb1c52b3739a6.bindPopup(popup_da811952baa547afb40294e5d0e9b3fd)
+        ;
+
+        
+    
+    
+            marker_0aab1b40f9d64df1b57bb1c52b3739a6.bindTooltip(
+                `<div>
+                     Washington, DC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_765b1477c96c496c8538e822479d302d = L.marker(
+                [38.8950368, -77.0365427],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_33f3291e45df46038c87acffbe05b211 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_765b1477c96c496c8538e822479d302d.setIcon(icon_33f3291e45df46038c87acffbe05b211);
+        
+    
+        var popup_e56240f811ae4840934c6a84fe562b5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5bf3708aca9f4cfda38467acbd24ce20 = $(`<div id="html_5bf3708aca9f4cfda38467acbd24ce20" style="width: 100.0%; height: 100.0%;">Penn Biden Center</div>`)[0];
+            popup_e56240f811ae4840934c6a84fe562b5f.setContent(html_5bf3708aca9f4cfda38467acbd24ce20);
+        
+
+        marker_765b1477c96c496c8538e822479d302d.bindPopup(popup_e56240f811ae4840934c6a84fe562b5f)
+        ;
+
+        
+    
+    
+            marker_765b1477c96c496c8538e822479d302d.bindTooltip(
+                `<div>
+                     Washington, DC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca9c182cb4ed4f37a1e29891821b3a81 = L.marker(
+                [38.6920451, -75.4013315],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_da55413429e14b0a90390aaad9f43fc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_ca9c182cb4ed4f37a1e29891821b3a81.setIcon(icon_da55413429e14b0a90390aaad9f43fc8);
+        
+    
+        var popup_0c15719502ed4ed494f2a5174e97f1aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96eb21e8b1284bf4a93876a5f10539e6 = $(`<div id="html_96eb21e8b1284bf4a93876a5f10539e6" style="width: 100.0%; height: 100.0%;">Livelihood</div>`)[0];
+            popup_0c15719502ed4ed494f2a5174e97f1aa.setContent(html_96eb21e8b1284bf4a93876a5f10539e6);
+        
+
+        marker_ca9c182cb4ed4f37a1e29891821b3a81.bindPopup(popup_0c15719502ed4ed494f2a5174e97f1aa)
+        ;
+
+        
+    
+    
+            marker_ca9c182cb4ed4f37a1e29891821b3a81.bindTooltip(
+                `<div>
+                     Delaware, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c1f57b5552948ca86aef6d657f09064 = L.marker(
+                [37.5385087, -77.43428],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_b64d98331aea41e992d41e726e6284e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_2c1f57b5552948ca86aef6d657f09064.setIcon(icon_b64d98331aea41e992d41e726e6284e3);
+        
+    
+        var popup_24ca19df506f4bdca734bf7d3e1d904b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c88833a642741aa8b141ee5542473be = $(`<div id="html_5c88833a642741aa8b141ee5542473be" style="width: 100.0%; height: 100.0%;">Tim Kaine</div>`)[0];
+            popup_24ca19df506f4bdca734bf7d3e1d904b.setContent(html_5c88833a642741aa8b141ee5542473be);
+        
+
+        marker_2c1f57b5552948ca86aef6d657f09064.bindPopup(popup_24ca19df506f4bdca734bf7d3e1d904b)
+        ;
+
+        
+    
+    
+            marker_2c1f57b5552948ca86aef6d657f09064.bindTooltip(
+                `<div>
+                     Richmond, VA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca6de721010948338610d6efe2c786ba = L.marker(
+                [40.7127281, -74.0060152],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_fd3dd879e29e4ab799114646edc588ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_ca6de721010948338610d6efe2c786ba.setIcon(icon_fd3dd879e29e4ab799114646edc588ab);
+        
+    
+        var popup_c63067e2690e4f0eb6abbd823ffc93ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6d3231f53b146ff9bba705041ec88ed = $(`<div id="html_d6d3231f53b146ff9bba705041ec88ed" style="width: 100.0%; height: 100.0%;">Hillary Clinton</div>`)[0];
+            popup_c63067e2690e4f0eb6abbd823ffc93ee.setContent(html_d6d3231f53b146ff9bba705041ec88ed);
+        
+
+        marker_ca6de721010948338610d6efe2c786ba.bindPopup(popup_c63067e2690e4f0eb6abbd823ffc93ee)
+        ;
+
+        
+    
+    
+            marker_ca6de721010948338610d6efe2c786ba.bindTooltip(
+                `<div>
+                     New York, NY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e4badfa191142c7bac4b35b98808bb4 = L.marker(
+                [38.8950368, -77.0365427],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_76d5210eb6af44ee86be2581cc2421e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_1e4badfa191142c7bac4b35b98808bb4.setIcon(icon_76d5210eb6af44ee86be2581cc2421e6);
+        
+    
+        var popup_adfd25bda9a54b7998d721afb1495441 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1607c3f3d58b4fc9ad30cf7a7ac79e0b = $(`<div id="html_1607c3f3d58b4fc9ad30cf7a7ac79e0b" style="width: 100.0%; height: 100.0%;">Dr. Biden -Archived</div>`)[0];
+            popup_adfd25bda9a54b7998d721afb1495441.setContent(html_1607c3f3d58b4fc9ad30cf7a7ac79e0b);
+        
+
+        marker_1e4badfa191142c7bac4b35b98808bb4.bindPopup(popup_adfd25bda9a54b7998d721afb1495441)
+        ;
+
+        
+    
+    
+            marker_1e4badfa191142c7bac4b35b98808bb4.bindTooltip(
+                `<div>
+                     Washington, DC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_539ec6ecd809498db002b3e204571085 = L.marker(
+                [38.8950368, -77.0365427],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_1ef36ae1f2e34448ae7cf00fc571e113 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_539ec6ecd809498db002b3e204571085.setIcon(icon_1ef36ae1f2e34448ae7cf00fc571e113);
+        
+    
+        var popup_0b9a5b7458e446f9af4d172e559b395a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_724aad51ed0b44d1b465c756e5b75d66 = $(`<div id="html_724aad51ed0b44d1b465c756e5b75d66" style="width: 100.0%; height: 100.0%;">White House Archived</div>`)[0];
+            popup_0b9a5b7458e446f9af4d172e559b395a.setContent(html_724aad51ed0b44d1b465c756e5b75d66);
+        
+
+        marker_539ec6ecd809498db002b3e204571085.bindPopup(popup_0b9a5b7458e446f9af4d172e559b395a)
+        ;
+
+        
+    
+    
+            marker_539ec6ecd809498db002b3e204571085.bindTooltip(
+                `<div>
+                     Washington, DC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0eb13b9396d48ebb15a2c446ad9dd84 = L.marker(
+                [38.9074322, -77.0350922],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_98600225867f4d7c9dcdae8a64989d75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_c0eb13b9396d48ebb15a2c446ad9dd84.setIcon(icon_98600225867f4d7c9dcdae8a64989d75);
+        
+    
+        var popup_fa13eee7bd9641e3b5b474eeed986f6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5fcfeaefa754407b4a046dda09c7e69 = $(`<div id="html_d5fcfeaefa754407b4a046dda09c7e69" style="width: 100.0%; height: 100.0%;">The White House 45 Archived</div>`)[0];
+            popup_fa13eee7bd9641e3b5b474eeed986f6a.setContent(html_d5fcfeaefa754407b4a046dda09c7e69);
+        
+
+        marker_c0eb13b9396d48ebb15a2c446ad9dd84.bindPopup(popup_fa13eee7bd9641e3b5b474eeed986f6a)
+        ;
+
+        
+    
+    
+            marker_c0eb13b9396d48ebb15a2c446ad9dd84.bindTooltip(
+                `<div>
+                     Washington, D.C.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b50bccf0e3cb4a97a7896fae0a6202ab = L.marker(
+                [38.9074322, -77.0350922],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_20d3000f0ccb48ac8bcc86de95cafe7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_b50bccf0e3cb4a97a7896fae0a6202ab.setIcon(icon_20d3000f0ccb48ac8bcc86de95cafe7b);
+        
+    
+        var popup_11a29ff4b888450b921aed50769acbb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcd4d3db0ee9423387daf254a946bd0f = $(`<div id="html_fcd4d3db0ee9423387daf254a946bd0f" style="width: 100.0%; height: 100.0%;">VP Biden (Archived)</div>`)[0];
+            popup_11a29ff4b888450b921aed50769acbb0.setContent(html_fcd4d3db0ee9423387daf254a946bd0f);
+        
+
+        marker_b50bccf0e3cb4a97a7896fae0a6202ab.bindPopup(popup_11a29ff4b888450b921aed50769acbb0)
+        ;
+
+        
+    
+    
+            marker_b50bccf0e3cb4a97a7896fae0a6202ab.bindTooltip(
+                `<div>
+                     Washington, D.C.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebf30421804e41629f771fe212a77d3d = L.marker(
+                [38.9074322, -77.0350922],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_d9e8efd3c9be4d7cada105bd798786de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_ebf30421804e41629f771fe212a77d3d.setIcon(icon_d9e8efd3c9be4d7cada105bd798786de);
+        
+    
+        var popup_7bdabc8ea9474c22acb5401a2897e027 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40631cee984e4528b22a66cbb57bec1a = $(`<div id="html_40631cee984e4528b22a66cbb57bec1a" style="width: 100.0%; height: 100.0%;">Vice President Mike Pence Archived</div>`)[0];
+            popup_7bdabc8ea9474c22acb5401a2897e027.setContent(html_40631cee984e4528b22a66cbb57bec1a);
+        
+
+        marker_ebf30421804e41629f771fe212a77d3d.bindPopup(popup_7bdabc8ea9474c22acb5401a2897e027)
+        ;
+
+        
+    
+    
+            marker_ebf30421804e41629f771fe212a77d3d.bindTooltip(
+                `<div>
+                     Washington, D.C.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db41978e6f7c41f484d08f9456fc788a = L.marker(
+                [38.6920451, -75.4013315],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_0000af3e5c664b478115c4eb839be6be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_db41978e6f7c41f484d08f9456fc788a.setIcon(icon_0000af3e5c664b478115c4eb839be6be);
+        
+    
+        var popup_ad341d2bbfb7442c9520014f6aff2769 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5caf6c2fdd604bd39b5528fb76ead285 = $(`<div id="html_5caf6c2fdd604bd39b5528fb76ead285" style="width: 100.0%; height: 100.0%;">Beau Biden Foundation</div>`)[0];
+            popup_ad341d2bbfb7442c9520014f6aff2769.setContent(html_5caf6c2fdd604bd39b5528fb76ead285);
+        
+
+        marker_db41978e6f7c41f484d08f9456fc788a.bindPopup(popup_ad341d2bbfb7442c9520014f6aff2769)
+        ;
+
+        
+    
+    
+            marker_db41978e6f7c41f484d08f9456fc788a.bindTooltip(
+                `<div>
+                     Delaware
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8fb1f88b7eb4ce88371e30caf7170b2 = L.marker(
+                [38.9074322, -77.0350922],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_6b8bd6da7ad54509b67f3e01d9e460f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_e8fb1f88b7eb4ce88371e30caf7170b2.setIcon(icon_6b8bd6da7ad54509b67f3e01d9e460f1);
+        
+    
+        var popup_0294c6831d9447c0bce8745d13f41415 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2f4f13e32784f6699e67385d67d67ce = $(`<div id="html_e2f4f13e32784f6699e67385d67d67ce" style="width: 100.0%; height: 100.0%;">The Democrats</div>`)[0];
+            popup_0294c6831d9447c0bce8745d13f41415.setContent(html_e2f4f13e32784f6699e67385d67d67ce);
+        
+
+        marker_e8fb1f88b7eb4ce88371e30caf7170b2.bindPopup(popup_0294c6831d9447c0bce8745d13f41415)
+        ;
+
+        
+    
+    
+            marker_e8fb1f88b7eb4ce88371e30caf7170b2.bindTooltip(
+                `<div>
+                     Washington, D.C.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18e054768a25499389c1b16a132f5e53 = L.marker(
+                [38.8950368, -77.0365427],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_edc634726e3a4a1dadf58656901e9348 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_18e054768a25499389c1b16a132f5e53.setIcon(icon_edc634726e3a4a1dadf58656901e9348);
+        
+    
+        var popup_8c7a5491358a45c3a8b29c7321a82f66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51e9fdbc28884f66b3b814e93632a116 = $(`<div id="html_51e9fdbc28884f66b3b814e93632a116" style="width: 100.0%; height: 100.0%;">Michelle Obama</div>`)[0];
+            popup_8c7a5491358a45c3a8b29c7321a82f66.setContent(html_51e9fdbc28884f66b3b814e93632a116);
+        
+
+        marker_18e054768a25499389c1b16a132f5e53.bindPopup(popup_8c7a5491358a45c3a8b29c7321a82f66)
+        ;
+
+        
+    
+    
+            marker_18e054768a25499389c1b16a132f5e53.bindTooltip(
+                `<div>
+                     Washington, DC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c1dadb203644998ab9a15b07c8c0f5f = L.marker(
+                [38.8950368, -77.0365427],
+                {}
+            ).addTo(feature_group_ff300a2ee3e44e069b8047aa0db5d8bb);
+        
+    
+            var icon_eac0230771db445eaea2adcaa3a287e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_1c1dadb203644998ab9a15b07c8c0f5f.setIcon(icon_eac0230771db445eaea2adcaa3a287e4);
+        
+    
+        var popup_a44cc7c3ea8b41b2b95e9a9821b76ae5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42a9e20c5d7a4a8f986b5476374004c8 = $(`<div id="html_42a9e20c5d7a4a8f986b5476374004c8" style="width: 100.0%; height: 100.0%;">Barack Obama</div>`)[0];
+            popup_a44cc7c3ea8b41b2b95e9a9821b76ae5.setContent(html_42a9e20c5d7a4a8f986b5476374004c8);
+        
+
+        marker_1c1dadb203644998ab9a15b07c8c0f5f.bindPopup(popup_a44cc7c3ea8b41b2b95e9a9821b76ae5)
+        ;
+
+        
+    
+    
+            marker_1c1dadb203644998ab9a15b07c8c0f5f.bindTooltip(
+                `<div>
+                     Washington, DC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_fbded9d325ac4675bba133485c8cb8b1 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_936d76aa4d87488db66cbebaeeb4575a,
+                },
+                overlays :  {
+                    "People following" : feature_group_ff300a2ee3e44e069b8047aa0db5d8bb,
+                },
+            };
+            L.control.layers(
+                layer_control_fbded9d325ac4675bba133485c8cb8b1.base_layers,
+                layer_control_fbded9d325ac4675bba133485c8cb8b1.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_d6e5aa1ab0fa4d42866e5e30658bf50c);
+        
+</script>
