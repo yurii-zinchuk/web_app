@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <form method="POST">
+            <label for="username">Username</label>
+            <br>
+            <input type="text"
+            name="username"
+            placeholder="Enter account's username"
+            value="{{request.form['title']}}">
+            <br>
+            <br>
+            <label for="num_friends">Num of friends to display</label>
+            <br>
+            <input type="text"
+            name="num_of_friends"
+            placeholder="Write number of friends"
+            value="{{request.form['num_of_friends']}}">
+            <br>
+            <br>
+            <button type="submit">Display</button>
+        </form>
+    </body>
+</html>

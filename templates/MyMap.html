@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1f9127800dce439da0ca14f3c2e803d6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1f9127800dce439da0ca14f3c2e803d6" ></div>
+        
+</body>
+<script>    
+    
+            var map_1f9127800dce439da0ca14f3c2e803d6 = L.map(
+                "map_1f9127800dce439da0ca14f3c2e803d6",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_1f9127800dce439da0ca14f3c2e803d6);
+
+            
+
+        
+    
+            var tile_layer_f9ac7ad098654024bf7fbb4928ef8971 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 2, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1f9127800dce439da0ca14f3c2e803d6);
+        
+    
+            var feature_group_ed4dc90c2b36460aa095178711e1a316 = L.featureGroup(
+                {}
+            ).addTo(map_1f9127800dce439da0ca14f3c2e803d6);
+        
+    
+            var marker_2a803c25c61b49d99c4d8848658843c9 = L.marker(
+                [36.7014631, -118.755997],
+                {}
+            ).addTo(feature_group_ed4dc90c2b36460aa095178711e1a316);
+        
+    
+            var icon_86264885ce9e49e686d78b32cc55f5f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_2a803c25c61b49d99c4d8848658843c9.setIcon(icon_86264885ce9e49e686d78b32cc55f5f6);
+        
+    
+        var popup_6ca0f693825b436bbcedbcf9a16d9e11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a776f5fceee483f8f653f480c031f2e = $(`<div id="html_0a776f5fceee483f8f653f480c031f2e" style="width: 100.0%; height: 100.0%;">PlayStation</div>`)[0];
+            popup_6ca0f693825b436bbcedbcf9a16d9e11.setContent(html_0a776f5fceee483f8f653f480c031f2e);
+        
+
+        marker_2a803c25c61b49d99c4d8848658843c9.bindPopup(popup_6ca0f693825b436bbcedbcf9a16d9e11)
+        ;
+
+        
+    
+    
+            marker_2a803c25c61b49d99c4d8848658843c9.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffa9ebcbcae0452a9306d134022647c9 = L.marker(
+                [47.6694141, -122.1238767],
+                {}
+            ).addTo(feature_group_ed4dc90c2b36460aa095178711e1a316);
+        
+    
+            var icon_57201e10773c4bb3ad45a75dbaa94164 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_ffa9ebcbcae0452a9306d134022647c9.setIcon(icon_57201e10773c4bb3ad45a75dbaa94164);
+        
+    
+        var popup_1c46254ccdc8493fa058b9e0883796e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2a24e504d6d4523b0e0980fff7b208e = $(`<div id="html_f2a24e504d6d4523b0e0980fff7b208e" style="width: 100.0%; height: 100.0%;">Xbox</div>`)[0];
+            popup_1c46254ccdc8493fa058b9e0883796e1.setContent(html_f2a24e504d6d4523b0e0980fff7b208e);
+        
+
+        marker_ffa9ebcbcae0452a9306d134022647c9.bindPopup(popup_1c46254ccdc8493fa058b9e0883796e1)
+        ;
+
+        
+    
+    
+            marker_ffa9ebcbcae0452a9306d134022647c9.bindTooltip(
+                `<div>
+                     Redmond, Washington
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4561ac31c540403099de9a1d19decdeb = L.marker(
+                [49.4871968, 31.2718321],
+                {}
+            ).addTo(feature_group_ed4dc90c2b36460aa095178711e1a316);
+        
+    
+            var icon_09c093bdc3c740368580a5552372b9d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_4561ac31c540403099de9a1d19decdeb.setIcon(icon_09c093bdc3c740368580a5552372b9d8);
+        
+    
+        var popup_c2cb4dce671e432ca68818beca883b2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_331f33d2c35641c29f9fe2f6e88df718 = $(`<div id="html_331f33d2c35641c29f9fe2f6e88df718" style="width: 100.0%; height: 100.0%;">Володимир Зеленський</div>`)[0];
+            popup_c2cb4dce671e432ca68818beca883b2c.setContent(html_331f33d2c35641c29f9fe2f6e88df718);
+        
+
+        marker_4561ac31c540403099de9a1d19decdeb.bindPopup(popup_c2cb4dce671e432ca68818beca883b2c)
+        ;
+
+        
+    
+    
+            marker_4561ac31c540403099de9a1d19decdeb.bindTooltip(
+                `<div>
+                     Ukraine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_982150c7fcca4733bb4acf2513a118ed = L.marker(
+                [33.9188589, -118.3483256],
+                {}
+            ).addTo(feature_group_ed4dc90c2b36460aa095178711e1a316);
+        
+    
+            var icon_23dea46107d8461184bbf74167a25ba3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_982150c7fcca4733bb4acf2513a118ed.setIcon(icon_23dea46107d8461184bbf74167a25ba3);
+        
+    
+        var popup_5dc3727cbb10404bb568768c3de5dbf1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d12d031c29cb4842a36de508956fe933 = $(`<div id="html_d12d031c29cb4842a36de508956fe933" style="width: 100.0%; height: 100.0%;">SpaceX</div>`)[0];
+            popup_5dc3727cbb10404bb568768c3de5dbf1.setContent(html_d12d031c29cb4842a36de508956fe933);
+        
+
+        marker_982150c7fcca4733bb4acf2513a118ed.bindPopup(popup_5dc3727cbb10404bb568768c3de5dbf1)
+        ;
+
+        
+    
+    
+            marker_982150c7fcca4733bb4acf2513a118ed.bindTooltip(
+                `<div>
+                     Hawthorne, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_faa3449282e64dea959bf740daa4775e = L.marker(
+                [49.4871968, 31.2718321],
+                {}
+            ).addTo(feature_group_ed4dc90c2b36460aa095178711e1a316);
+        
+    
+            var icon_89d1d537a42d453aaf02ba8f427529b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_faa3449282e64dea959bf740daa4775e.setIcon(icon_89d1d537a42d453aaf02ba8f427529b2);
+        
+    
+        var popup_76c7426dcf6042e390fe3aa1f59e466a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2098dcc9082b4435813cd99a18f9fb28 = $(`<div id="html_2098dcc9082b4435813cd99a18f9fb28" style="width: 100.0%; height: 100.0%;">Володимир Зеленський Yurii Zinchuk</div>`)[0];
+            popup_76c7426dcf6042e390fe3aa1f59e466a.setContent(html_2098dcc9082b4435813cd99a18f9fb28);
+        
+
+        marker_faa3449282e64dea959bf740daa4775e.bindPopup(popup_76c7426dcf6042e390fe3aa1f59e466a)
+        ;
+
+        
+    
+    
+            marker_faa3449282e64dea959bf740daa4775e.bindTooltip(
+                `<div>
+                     Ukraine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_6939059d71134e4cb99487208eadd539 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f9ac7ad098654024bf7fbb4928ef8971,
+                },
+                overlays :  {
+                    "People following" : feature_group_ed4dc90c2b36460aa095178711e1a316,
+                },
+            };
+            L.control.layers(
+                layer_control_6939059d71134e4cb99487208eadd539.base_layers,
+                layer_control_6939059d71134e4cb99487208eadd539.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_1f9127800dce439da0ca14f3c2e803d6);
+        
+</script>
