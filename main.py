@@ -5,11 +5,32 @@ of people that certain account is following.
 import requests
 import folium as fl
 from geopy.geocoders import Nominatim
+from flask import Flask, redirect, render_template, request, url_for
+
+
+app = Flask(__name__)
 
 
 AUTH_INFO = {'Authorization': 'Bearer \
 AAAAAAAAAAAAAAAAAAAAAHYZZQEAAAAACaTY6qZpAmIQumkIXGSXh%2BmermQ\
 %3Diu3as5a5RqUZ5m49HRqaGjm6dpnkXphGAVGuA82gyVlQdeWyVJ'}
+
+
+@app.route('/', methods=('GET', 'POST'))
+def enter_username():
+    if request.method == 'POST':
+        username = request.form['username']
+        num_of_friends = int(request.form['num_of_friends'])
+        # if not username:
+        #     pass
+        main(username, num_of_friends)
+        return redirect(url_for('show_map'))
+    return render_template('formpage.html')
+
+
+@app.route('/map/')
+def show_map():
+    return render_template('MyMap.html')
 
 
 def get_id_by_username(username: str) -> str:
@@ -97,7 +118,7 @@ def get_map_info(following_info: list) -> list:
     return names_locations_coordinates
 
 
-def create_map(map_info: list):
+def create_map(map_info: list, num_of_friends: int):
     """Create map based on input people's info.
 
     Args:
@@ -113,6 +134,9 @@ def create_map(map_info: list):
 
     fg_m = fl.FeatureGroup(name='People following')
     people = dict()
+    map_info = [x for x in map_info if len(x) == 3]
+    if len(map_info) > num_of_friends:
+        map_info = map_info[:num_of_friends-1]
     for name, location, coordinates in map_info:
         if coordinates in people:
             people[coordinates].append(name)
@@ -128,10 +152,10 @@ def create_map(map_info: list):
 
     my_map.add_child(fg_m)
     my_map.add_child(fl.LayerControl())
-    my_map.save('MyMap.html')
+    my_map.save('templates/MyMap.html')
 
 
-def main(username: str):
+def main(username: str, num_of_friends: int):
     """Main function. Controls the flow of
     the module.
 
@@ -142,8 +166,9 @@ def main(username: str):
     user_id = get_id_by_username(username)
     following_info = get_accounts_info(user_id)
     map_info = get_map_info(following_info)
-    create_map(map_info)
+    create_map(map_info, num_of_friends)
 
 
 if __name__ == "__main__":
-    main('JoeBiden')
+    # main('JoeBiden')
+    app.run(debug=True)
