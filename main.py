@@ -2,6 +2,7 @@
 of people that certain account is following.
 """
 
+from crypt import methods
 import requests
 import folium as fl
 from geopy.geocoders import Nominatim
@@ -19,18 +20,21 @@ AAAAAAAAAAAAAAAAAAAAAHYZZQEAAAAACaTY6qZpAmIQumkIXGSXh%2BmermQ\
 @app.route('/', methods=('GET', 'POST'))
 def enter_username():
     if request.method == 'POST':
-        username = request.form['username']
-        num_of_friends = int(request.form['num_of_friends'])
-        # if not username:
-        #     pass
-        main(username, num_of_friends)
-        return redirect(url_for('show_map'))
-    return render_template('formpage.html')
+        if 'show' in request.form.keys():
+            return redirect(url_for('show_map'))
+        else:
+            username = request.form['username']
+            num_of_friends = int(request.form['num_of_friends'])
+            main(username, num_of_friends)
+            return redirect(url_for('enter_username'))
+    return render_template('index.html')
 
 
-@app.route('/map/')
+@app.route('/map/', methods=('GET', 'POST'))
 def show_map():
-    return render_template('MyMap.html')
+    if request.method == 'POST':
+        return redirect(url_for('enter_username'))
+    return render_template('bigmap.html')
 
 
 def get_id_by_username(username: str) -> str:
@@ -92,11 +96,11 @@ def get_coordinates(location: str) -> tuple:
         lat = geocode.latitude
         lng = geocode.longitude
         return lat, lng
-    except AttributeError:
+    except Exception:
         return None
 
 
-def get_map_info(following_info: list) -> list:
+def get_map_info(following_info: list, num_of_friends) -> list:
     """Return list with sublists with name, location,
     and coordinates of each account, if geopy managed
     to find coordinates.
@@ -110,10 +114,17 @@ def get_map_info(following_info: list) -> list:
 
     names_locations_coordinates = following_info
 
+    found = 0
     for index, location in enumerate(names_locations_coordinates):
         coordinates = get_coordinates(location[1])
         if coordinates:
             names_locations_coordinates[index].append(coordinates)
+            found += 1
+
+        if found == num_of_friends:
+            break
+
+    names_locations_coordinates = [x for x in following_info if len(x) == 3]
 
     return names_locations_coordinates
 
@@ -128,15 +139,12 @@ def create_map(map_info: list, num_of_friends: int):
     """
     my_map = fl.Map(
         min_zoom=2,
-        zoom_start=8,
+        zoom_start=7,
         control_scale=True
     )
 
     fg_m = fl.FeatureGroup(name='People following')
     people = dict()
-    map_info = [x for x in map_info if len(x) == 3]
-    if len(map_info) > num_of_friends:
-        map_info = map_info[:num_of_friends-1]
     for name, location, coordinates in map_info:
         if coordinates in people:
             people[coordinates].append(name)
@@ -153,6 +161,7 @@ def create_map(map_info: list, num_of_friends: int):
     my_map.add_child(fg_m)
     my_map.add_child(fl.LayerControl())
     my_map.save('templates/MyMap.html')
+    my_map.save('static/MyMap.html')
 
 
 def main(username: str, num_of_friends: int):
@@ -165,10 +174,9 @@ def main(username: str, num_of_friends: int):
     """
     user_id = get_id_by_username(username)
     following_info = get_accounts_info(user_id)
-    map_info = get_map_info(following_info)
+    map_info = get_map_info(following_info, num_of_friends)
     create_map(map_info, num_of_friends)
 
 
 if __name__ == "__main__":
-    # main('JoeBiden')
     app.run(debug=True)
