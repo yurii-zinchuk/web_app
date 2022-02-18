@@ -5,11 +5,17 @@ This is a web application that provieds you with the ability to find locations o
 following. It displays them on the map.
 
 
-# Installation of dependencies
+# Installation
 
 From now on, every action described should be performed via terminal.
 
-First, you need install all necessary dependencies from the "requirements.txt" file.
+First, clone this repo to your machine.
+
+```bash
+git clone 'url'
+```
+
+Then, you need install all necessary dependencies from the "requirements.txt" file.
 For doing that, use [pip](https://pip.pypa.io/en/stable/) package manager.
 
 ```bash
