@@ -12,7 +12,7 @@ From now on, every action described should be performed via terminal.
 First, clone this repo to your machine.
 
 ```bash
-git clone 'url'
+git clone https://github.com/yurii-zinchuk/web_app.git
 ```
 
 Then, you need install all necessary dependencies from the "requirements.txt" file.
