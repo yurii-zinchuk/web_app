@@ -36,7 +36,9 @@ You will see web server start running on your computer locally (127.0.0.0:5000).
 You will see this:
 ![image](https://user-images.githubusercontent.com/91616521/154717002-cfda5e16-bb94-498a-ac12-f59704271367.png)
 
-Then fill the fields of username of the person whose friends you want to find and the number of people to display on the map. After that click the "Find" button, or just hit "Enter" Do not leave the fields empty.
+Then fill two fields of the form. First is the username of the person whose friends you want to find. Username is text after the @ symbol.
+The second is the number of people to display on the map.
+After that click the "Find" button, or just hit "Enter". Do not leave the fields empty.
 
 Generation of the map may take some time, since locations have to be accessed via Twitter API and then coordinates have to be located via geopy.geocoders. Thus, the more friends you request, the longer it will take.
 
